@@ -1,6 +1,6 @@
 {
   "name": "@kne/flex-box",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0",
   "description": "通过外部容器尺寸来确定内部容器的列",
   "syntax": {
     "esmodules": true
@@ -85,6 +85,6 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@kne/use-resize": "^0.1.0-alpha.0"
+    "@kne/use-resize": "^0.1.1"
   }
 }
