@@ -6,6 +6,7 @@ const BaseExample = () => {
     return (<div>
         <FlexBoxFetch
             ref={ref}
+            pagination={{ position: 'bottom', align: 'center' }}
             getFetchApi={({size}) => {
                 return {
                     data: {
