@@ -1,6 +1,6 @@
 {
   "name": "@kne/flex-box",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "通过外部容器尺寸来确定内部容器的列",
   "syntax": {
     "esmodules": true
