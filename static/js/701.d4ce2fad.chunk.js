@@ -1,0 +1,2 @@
+"use strict";(globalThis.webpackChunk_flex_box_0_1_2||=[]).push([[701],{70701(e,o,x){x.r(o);const l={FlexBox:x(69666).A};x.d(o,["default",0,l,"manifest",0,{name:"flex-box",version:"0.1.2","open-version":!0,"public-url":"/flex-box",modules:[{name:"flex-box",baseDir:"/home/runner/work/flex-box/flex-box",description:"\u901a\u8fc7\u5916\u90e8\u5bb9\u5668\u5c3a\u5bf8\u6765\u786e\u5b9a\u5185\u90e8\u5bb9\u5668\u7684\u5217",packageName:"@kne/flex-box"}]}])}}]);
+//# sourceMappingURL=701.d4ce2fad.chunk.js.map
