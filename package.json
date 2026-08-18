@@ -1,6 +1,6 @@
 {
   "name": "@kne/flex-box",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "通过外部容器尺寸来确定内部容器的列",
   "syntax": {
     "esmodules": true
@@ -70,13 +70,14 @@
     ]
   },
   "peerDependencies": {
+    "antd": ">=6",
     "react": "*",
-    "react-dom": "*",
-    "antd": ">=5"
+    "react-dom": "*"
   },
   "devDependencies": {
     "@kne/microbundle": "^0.15.5",
     "@kne/modules-dev": "^2.0.14",
+    "antd": "^6.6.1",
     "cross-env": "^7.0.3",
     "husky": "^9.0.11",
     "npm-run-all": "^4.1.5",
@@ -85,6 +86,8 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@kne/use-resize": "^0.1.1"
+    "@kne/react-fetch": "^1.5.7",
+    "@kne/use-resize": "^0.1.1",
+    "classnames": "^2.5.1"
   }
 }
