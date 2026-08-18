@@ -1,20 +1,30 @@
 import React from 'react';
-import {List} from "antd";
 import defaultColumns from './defaultColumns';
 import useFlexBox from './useFlexBox';
+import FlexBoxView, { Item } from './FlexBoxView';
 
-const FlexBox = (props) => {
-    const {columns, outerClassName, gutter, ...others} = Object.assign({}, {
-        gutter: 16, columns: defaultColumns,
-    }, props);
-    const {ref, column} = useFlexBox({columns});
-    return (<div ref={ref} className={outerClassName}>
-        {column && (<List {...others} grid={{
-            gutter, column: column.col,
-        }}/>)}
-    </div>);
+const FlexBox = props => {
+  const { columns, outerClassName, className, gutter, dataSource, renderItem, rowKey, onChange, children } = Object.assign(
+    {},
+    {
+      gutter: 16,
+      columns: defaultColumns,
+      dataSource: []
+    },
+    props
+  );
+  const { ref, column } = useFlexBox({ columns, onChange });
+  return (
+    <div ref={ref} className={outerClassName} style={{ width: '100%', minWidth: 0 }}>
+      {column && (
+        <FlexBoxView column={column} gutter={gutter} className={className} dataSource={dataSource} renderItem={renderItem} rowKey={rowKey}>
+          {children}
+        </FlexBoxView>
+      )}
+    </div>
+  );
 };
 
-FlexBox.Item = List.Item;
+FlexBox.Item = Item;
 
 export default FlexBox;

@@ -2,13 +2,14 @@
   "isFull": false,
   "list": [
     {
-      "title": "这里填写示例标题",
-      "description": "这里填写示例说明",
-      "code": "./base.js",
+      "title": "FlexBox 响应式卡片栅格",
+      "description": "按容器宽度切换列数，同一行卡片拉齐高度。示例覆盖基础列表、自定义断点、间距，以及列变化回调。",
+      "code": "./flex-box.js",
       "scope": [
         {
           "name": "_FlexBox",
-          "packageName": "@kne/current-lib_flex-box"
+          "packageName": "@kne/current-lib_flex-box",
+          "importStatement": "import * as _FlexBox from \"@kne/flex-box\""
         },
         {
           "name": "antd",
@@ -17,13 +18,30 @@
       ]
     },
     {
-      "title": "这里填写示例标题",
-      "description": "这里填写示例说明",
-      "code": "./fetch.js",
+      "title": "FlexBoxFetch 远程列表",
+      "description": "按当前列配置的 size 请求数据，支持底部分页。缩小容器会换列并重新请求。",
+      "code": "./flex-box-fetch.js",
       "scope": [
         {
           "name": "_FlexBox",
-          "packageName": "@kne/current-lib_flex-box"
+          "packageName": "@kne/current-lib_flex-box",
+          "importStatement": "import * as _FlexBox from \"@kne/flex-box\""
+        },
+        {
+          "name": "antd",
+          "packageName": "antd"
+        }
+      ]
+    },
+    {
+      "title": "useFlexBox 单独使用",
+      "description": "把 ref 绑到任意容器上，根据宽度得到当前 col / size，可用来驱动自己的布局。",
+      "code": "./use-flex-box.js",
+      "scope": [
+        {
+          "name": "_FlexBox",
+          "packageName": "@kne/current-lib_flex-box",
+          "importStatement": "import * as _FlexBox from \"@kne/flex-box\""
         },
         {
           "name": "antd",

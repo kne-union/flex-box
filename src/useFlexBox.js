@@ -10,8 +10,11 @@ const useFlexBox = props => {
   const columnRef = useRef(null);
   const ref = useResize(el => {
     const width = el.clientWidth;
+    if (!width) {
+      return;
+    }
     const column =
-      columns.find((item, index) => {
+      columns.find(item => {
         return item.width >= width;
       }) || last(columns);
     if (!isEqual(column, columnRef.current)) {
